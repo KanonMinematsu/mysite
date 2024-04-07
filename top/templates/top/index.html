@@ -1,0 +1,51 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'top/style.css' %}">
+<h1>amoom</h1>
+<!DOCTYPE html>
+<html lang="ja-jp">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>amoom/通販サイト</title>
+</head>
+<body id="top">
+    <header id="header">
+        <div id="headerWrap">
+            <nav id="mainnav">
+                <p id="menuWrap"><a id="menu"><span id="menuBtn"></span></a></p>
+                <ul>
+ 
+                        <header>
+                
+                            <div class="navigation">
+                                <form action="index.html" class="search-form-009">
+                                    <span class="magnifying_glass"></span>
+                            
+                                    
+                                    </form>
+                                <div>次のユーザーでログインしています: {{ user }}</div>
+                                <ul>
+                                    <p><a href="{% url 'create' %}">CREATE ACCOUNTS</a></p>
+                                    <p><a href="{% url 'accounts_index' %}">LOGIN</a></p>
+                                    <p><a href="product.html">PRPDUCT </a></p>
+                                    <p><a href="{% url 'form' %}">MAIL</a></p>
+                                </ul>
+                            </div>
+                        </header>
+                        <h3>news</h3>
+                        <h4 style="text-align: left">2024.01.17 /  SEMINER</h4>
+                        <p style="text-align: center;"2月9日<ヒマラヤンオイル カウンセリング>ZOOM勉強会</p>
+                        <p>内容： 東洋医学では健康な状態の人体には「気」「血」「水」の３種類のエネルギーが流れていて、この３種類のバランスが良いと健康で美しい身体であると考えられています。</p>
+                        [サロン様限定勉強会】ヒマラヤンオイル カウンセリング〉</p> 
+                        <p>日時:2月9日（金）開催 時間:20:00～21:00</p> 
+                        <p>_____________________________________________________</p>
+                        <h4 style="text-align: left">2023.10.09 / SEMINER</h4>
+                        <p style="text-align: center;"10月27日<サロン救世主 ～ サイマケア ～>ZOOM勉強会</p>
+                        <p>〈サロン救世主 ～ サイマケア ～〉 日時:10月27日（金）開催 時間:20:00～21:30 内容：長年サロン経営をし、たどり着いた「サイマケア」についてお伝えさせていただきます。</p>
+                        <p>_____________________________________________________</p>
+                        <h4 style="text-align: left">2023.09.07 / SEMINER</h4>
+                        <p style="text-align: center;">8月7日<新商品説明・物販勉強会>ZOOM勉強会</p>
+                </div>
+            </nav>
+</html>

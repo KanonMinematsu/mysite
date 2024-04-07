@@ -1,0 +1,26 @@
+
+{% load static %}
+    <link rel="stylesheet" href="{% static 'accounts/style.css' %}">
+    <h1>amoom</h1>
+    <!DOCTYPE html>
+    <html lang="ja-jp">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>amoom/通販サイト</title>
+    </head>
+
+<div>
+    <h1 style="text-align:center">create user</h1>
+    <form action="{% url 'signup' %}" method="post">
+      {% csrf_token %}
+      <input type="text"  size="30" name="username" placeholder="user name" />
+      <input type="password" size="30" name="password" placeholder="password" />
+      <input type="submit"  size="30" value="create user" />
+    </form>
+</div>
+
+
+  
+    

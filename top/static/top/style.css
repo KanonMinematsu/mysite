@@ -1,0 +1,43 @@
+h1 {
+    /*線の種類（実線） 太さ 色*/
+    border-bottom: solid 3px rgb(65, 64, 64);
+  }
+
+  /* ヘッダー
+  ------------------------------------------------------------*/
+  #header{
+	text-align: center;
+}
+
+#header h1{
+	padding-top: 80px;
+}
+
+#mainnav a{
+	color: #000;
+}
+/* フッター
+------------------------------------------------------------*/
+#footer{
+	clear: both;
+	padding: 50px 10px 50px 0;
+	text-align: center;
+	font-size: 12px;
+}
+/* 共通
+------------------------------------------------------------*/
+
+img{
+	max-width: 100%;
+	height: auto;
+}
+
+section{
+	clear:both;
+	padding-top: 70px;
+}
+
+h3 {
+	padding: 1rem 2rem;
+	border-left: 4px solid #000;
+  }

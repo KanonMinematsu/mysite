@@ -1,0 +1,9 @@
+<h1>問い合わせ</h1>
+
+<form method="post">
+  {% csrf_token %}
+  {% for field in form %}
+  <div>{{field.label_tag}} {{field}} {{field.errors}}</div>
+  {% endfor %}
+  <button type="submit">送信</button>
+</form>

@@ -1,0 +1,40 @@
+
+{% load static %}
+    <link rel="stylesheet" href="{% static 'top/style.css' %}">
+    <h1>amoom</h1>
+    <!DOCTYPE html>
+    <html lang="ja-jp">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>amoom/通販サイト</title>
+    </head>
+
+{% if user.is_authenticated %}
+<div>
+  <div>次のユーザーでログインしています: {{ user }}</div>
+  <form action="{% url 'signout' %}" method="post">
+    {% csrf_token %}
+    <input type="submit" value="ログアウト" />
+  </form>
+</div>
+<div>
+    <a href="{% url 'index' %}">>> home page</a>
+</div>
+{% else %}
+<div>
+  <h2>Login</h2>
+  <form action="{% url 'signin' %}" method="post">
+    {% csrf_token %}
+    <input type="text" name="username" placeholder="ユーザー名" />
+    <input type="password" name="password" placeholder="パスワード" />
+    <input type="submit" value="ログイン" />
+  </form>
+  <div>
+    <a href="{% url 'index' %}">ログイン画面に戻る</a>
+  </div>
+ 
+
+</div>
+{% endif %}
